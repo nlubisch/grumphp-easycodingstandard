@@ -1,0 +1,27 @@
+{
+    "name": "nlubisch/grumphp-easycodingstandard",
+    "description": "EasyCodingStandard Task for GrumPHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Lubisch",
+            "email": "github@nicklubisch.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "phpro/grumphp": "^0.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "NLubisch\\GrumPHP\\": "src/"
+        }
+    },
+    "suggest": {
+        "symplify/easy-coding-standard": "Allow checking code style with EasyCodingStandard."
+    },
+    "require-dev": {
+        "symplify/easy-coding-standard": "^5.4"
+    }
+}
