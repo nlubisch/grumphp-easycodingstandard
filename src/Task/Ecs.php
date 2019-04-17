@@ -22,10 +22,12 @@ class Ecs extends AbstractExternalTask
     {
         $resolver = new OptionsResolver();
         $resolver->setDefaults([
+            'config' => null,
             'whitelist_patterns' => [],
             'fix' => false,
         ]);
 
+        $resolver->addAllowedTypes('config', ['string']);
         $resolver->addAllowedTypes('whitelist_patterns', ['array']);
         $resolver->addAllowedTypes('fix', ['bool']);
 
@@ -48,6 +50,10 @@ class Ecs extends AbstractExternalTask
 
         foreach ($whitelistPatterns as $whitelistPattern) {
             $arguments->add($whitelistPattern);
+        }
+
+        if ($config['config']) {
+            $arguments->add('--config=' . $config['config']);
         }
 
         if ($fix) {

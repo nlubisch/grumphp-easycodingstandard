@@ -28,6 +28,11 @@ parameters:
             fix: true
 ```
 
+**config**
+*Default: `null`*
+
+If the EasyCodingStandard config is in a different path you can specify it.
+
 **whitelist_patterns**
 *Default: `[]`*
 
