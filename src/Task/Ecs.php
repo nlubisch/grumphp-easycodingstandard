@@ -57,6 +57,8 @@ class Ecs extends AbstractExternalTask
             $arguments->add('--fix');
         }
 
+        $arguments->add('--no-progress-bar');
+
         $process = $this->processBuilder->buildProcess($arguments);
         $process->run();
 
