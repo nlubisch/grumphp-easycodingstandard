@@ -23,9 +23,6 @@ class Ecs extends AbstractExternalTask
         $resolver = new OptionsResolver();
         $resolver->setDefaults([
             'whitelist_patterns' => [],
-        ]);
-
-        $resolver->setDefaults([
             'fix' => false,
         ]);
 
