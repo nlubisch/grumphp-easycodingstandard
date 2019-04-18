@@ -10,16 +10,19 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
-        "phpro/grumphp": "^0.14"
+        "php": ">=7.1"
     },
+    "require-dev": {
+        "phpro/grumphp": "^0.14"
+    }
     "autoload": {
         "psr-4": {
             "NLubisch\\GrumPHP\\": "src/"
         }
     },
     "suggest": {
-        "symplify/easy-coding-standard": "Allow checking code style with EasyCodingStandard."
+        "symplify/easy-coding-standard": "Allow checking code style with EasyCodingStandard.",
+        "phpro/grumphp": "This only works with GrumPHP"
     },
     "require-dev": {
         "symplify/easy-coding-standard": "^5.4"
