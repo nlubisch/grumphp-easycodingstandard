@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "phpro/grumphp": "^0.14"
+        "phpro/grumphp": "^0.15"
     },
     "autoload": {
         "psr-4": {
